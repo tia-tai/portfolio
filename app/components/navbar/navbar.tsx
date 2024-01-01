@@ -1,20 +1,6 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
-
-const pages = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "Projects",
-    href: "/projects",
-  },
-  {
-    title: "Contact Me",
-    href: "/contactMe",
-  }
-]
+import DropMenu from '../dropMenu'
 
 const NavBar = () => {
 
@@ -24,6 +10,7 @@ const NavBar = () => {
           <Link className="font-mono font-black text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400" href={"/"}>TL</Link>
         </div>
         <div className="flex-none">
+          <DropMenu/>
         </div>
     </div>
   )
