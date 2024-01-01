@@ -2,15 +2,17 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import SelfImg from './components/self'
+import BackDrop from './components/backdrop'
 
 export default function Home() {
   return (
     <main>
       <div className="hero bg-base-100" style={{"height": "85vh"}}>
+        <section><BackDrop>Aspiring Mechatronic Engineer</BackDrop></section>
         <div className="hero-content text-center">
           <div className="max-w-8xl">
-            <h2 className="text-6xl font-black">MY NAME IS</h2>
-            <h1 className="text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">TAI YU LIN</h1>
+            <h2 className="text-6xl font-black z-50">MY NAME IS</h2>
+            <h1 className="text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 z-50">TAI YU LIN</h1>
           </div>
         </div>
       </div>
