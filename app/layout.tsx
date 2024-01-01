@@ -16,8 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="dim">
-      <NavBar></NavBar>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavBar></NavBar>
+        {children}
+      </body>
     </html>
   )
 }
