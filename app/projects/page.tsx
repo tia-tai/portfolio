@@ -1,4 +1,5 @@
 import React from 'react'
+import CaroScroll from '../components/caroscroll'
 
 const Projects = () => {
   return (
@@ -10,6 +11,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <CaroScroll></CaroScroll>
     </main>
   )
 }
